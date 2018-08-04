@@ -1,3 +1,8 @@
+> Author：zyl
+
+> Date：2018/8/4
+
+
 # 基于Camera link接口的16通道低噪声AD技术
 
 ### FPGA采用xilinx公司的XC6SLX100FG676，在FPGA内需要设计
@@ -50,4 +55,14 @@ module adcControl(
 ```
 定义参考如下：
 ![image](https://github.com/zyldgd/16Channel/blob/master/adc.png)
+
+
+### 仿真：
+[点击查看 测试代码](https://github.com/zyldgd/16Channel/blob/master/adc.v)
+
+### 仿真结果：
+
+![image](https://github.com/zyldgd/16Channel/blob/master/sim.png)
+
+
 
