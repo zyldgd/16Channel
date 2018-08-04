@@ -62,7 +62,7 @@ module adcControl(
 
 ### 仿真结果：
 
-![image](https://github.com/zyldgd/16Channel/blob/master/sim.png)
+![image](https://github.com/zyldgd/16Channel/blob/master/SIMresult.png)
 
 
 
