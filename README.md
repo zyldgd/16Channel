@@ -5,7 +5,7 @@
 
 # 基于Camera link接口的16通道低噪声AD技术
 
-### FPGA采用xilinx公司的XC6SLX100FG676，在FPGA内需要设计
+## FPGA采用xilinx公司的XC6SLX100FG676，在FPGA内需要设计，设计要求如下：
 1. **AD芯片的控制程序**
 1. **AD采样程序**
 1. **同步数据输出**
@@ -21,7 +21,7 @@
 
 
 
-### ADC数据传输模块接口定义：
+## ADC数据传输模块接口定义：
 
 ```
 module adcDateSend(
@@ -37,7 +37,7 @@ module adcDateSend(
 );
 ```
 
-### ADC控制模块接口定义：
+## ADC控制模块接口定义：
 
 ```
 module adcControl(
@@ -57,12 +57,21 @@ module adcControl(
 ![image](image/adc.png)
 
 
-### 仿真：
+## 仿真：
 [点击查看 测试代码](code/adcDateSend.v)
 
-### 仿真结果：
+## 仿真结果：
 
 ![image](image/SIMresult.png)
+
+# LTC2202/2203
+
+## 资料
+[Data Sheet](res/LTC2202_datasheet.pdf)
+
+[LTC220X data sampling](code/LTC220X_data_sampling.v) 
+
+
 
 
 

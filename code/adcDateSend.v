@@ -1,3 +1,11 @@
+/*
+ * file   : adc_data_send.v 
+ * author : zyl
+ * date   : 2018-8-10
+ * addr   : whu.edu.ionosphereLab
+ */
+
+
 module adc_data_send(
 input    wire               clk,
 input    wire               reset_n,
