@@ -1,4 +1,4 @@
-module adc(
+module adc_data_send(
 input    wire               clk,
 input    wire               reset_n,
 input    wire               en,

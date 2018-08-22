@@ -24,7 +24,7 @@
 ### ADC数据传输模块接口定义：
 
 ```
-module ADC(
+module adcDateSend(
     input    wire               clk,
     input    wire               reset_n,    
     
@@ -54,15 +54,15 @@ module adcControl(
 
 ```
 定义参考如下：
-![image](https://github.com/zyldgd/16Channel/blob/master/adc.png)
+![image](image/adc.png)
 
 
 ### 仿真：
-[点击查看 测试代码](https://github.com/zyldgd/16Channel/blob/master/adc.v)
+[点击查看 测试代码](code/adcDateSend.v)
 
 ### 仿真结果：
 
-![image](https://github.com/zyldgd/16Channel/blob/master/SIMresult.png)
+![image](image/SIMresult.png)
 
 
 
