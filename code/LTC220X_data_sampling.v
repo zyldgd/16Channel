@@ -6,6 +6,7 @@
  */
 
 module LTC220X_data_sampling(
+input   
 
 );
 
