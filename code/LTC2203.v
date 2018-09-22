@@ -8,7 +8,7 @@ Descr  :
     
 */
 
-`define enable_fir = 1;
+`define enable_fir 1
 
 module LTC2203(
     input   wire           CLK,
@@ -83,7 +83,7 @@ module LTC2203(
     output  reg   [15:0]   DATA_OUT_U25
     );
 
-    parameter              FIR_EN = enable_fir;
+    parameter              FIR_EN = `enable_fir;
 
     wire                   CLK_U10;
     wire                   CLK_U11;
