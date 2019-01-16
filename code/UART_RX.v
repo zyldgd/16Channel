@@ -56,7 +56,7 @@ module UART_RX #(parameter BAUDRATE = 115200, parameter FREQ = 50_000_000)(
     end
     
 
-
+ 
     always @(posedge CLK or negedge RESET_n) begin
         if(RESET_n == 0)
             cnt_bit <= 0;

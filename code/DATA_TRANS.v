@@ -36,9 +36,9 @@ module DATA_TRANS(
  
     reg             [ 7:0]     CHANNEL;
     reg             [15:0]     DATA[15:0];  // 缓存 
-	 reg             [ 7:0]     DATA_RX;
+    reg             [ 7:0]     DATA_RX;
     wire            [ 7:0]     DATA_RX_reg;
-	 
+     
     reg             [ 7:0]     STATE;
     reg                        SEND_REQ;
     reg             [ 7:0]     SEND_DATA;
@@ -56,25 +56,25 @@ module DATA_TRANS(
                     SEND_REQ <= 0;
                 end
                 1: begin
-							if(DATA_RX == 8'hFF) begin
-							  DATA[0] <= DATA_IN_U10; 
-							  DATA[1] <= DATA_IN_U11;
-							  DATA[2] <= DATA_IN_U12;
-							  DATA[3] <= DATA_IN_U13;
-							  DATA[4] <= DATA_IN_U14;
-							  DATA[5] <= DATA_IN_U15;
-							  DATA[6] <= DATA_IN_U16;
-							  DATA[7] <= DATA_IN_U17;
-							  DATA[8] <= DATA_IN_U18;
-							  DATA[9] <= DATA_IN_U19;
-							  DATA[10] <= DATA_IN_U20;
-							  DATA[11] <= DATA_IN_U21;
-							  DATA[12] <= DATA_IN_U22;
-							  DATA[13] <= DATA_IN_U23;
-							  DATA[14] <= DATA_IN_U24;
-							  DATA[15] <= DATA_IN_U25;
-							  STATE <= 2;
-						  end
+                            if(DATA_RX == 8'hFF) begin
+                              DATA[0] <= DATA_IN_U10; 
+                              DATA[1] <= DATA_IN_U11;
+                              DATA[2] <= DATA_IN_U12;
+                              DATA[3] <= DATA_IN_U13;
+                              DATA[4] <= DATA_IN_U14;
+                              DATA[5] <= DATA_IN_U15;
+                              DATA[6] <= DATA_IN_U16;
+                              DATA[7] <= DATA_IN_U17;
+                              DATA[8] <= DATA_IN_U18;
+                              DATA[9] <= DATA_IN_U19;
+                              DATA[10] <= DATA_IN_U20;
+                              DATA[11] <= DATA_IN_U21;
+                              DATA[12] <= DATA_IN_U22;
+                              DATA[13] <= DATA_IN_U23;
+                              DATA[14] <= DATA_IN_U24;
+                              DATA[15] <= DATA_IN_U25;
+                              STATE <= 2;
+                          end
                 end
                 2: begin
                     if (CHANNEL <= 15) begin
@@ -82,7 +82,7 @@ module DATA_TRANS(
                         STATE <= 3;
                     end else begin
                         if(DATA_RX == 8'h00)
-									STATE <= 0;
+                                    STATE <= 0;
                     end
                 end
                 3: begin
@@ -118,20 +118,20 @@ module DATA_TRANS(
             endcase
         end
     end
-	 
-	 always @(posedge CLK_50M) begin
-			if(VALID)
-				DATA_RX[7:0] <= DATA_RX_reg[7:0];
-	 end
-	 
-	 
-	UART_RX i2(
-	     .CLK        (CLK_50M),
+     
+     always @(posedge CLK_50M) begin
+            if(VALID)
+                DATA_RX[7:0] <= DATA_RX_reg[7:0];
+     end
+     
+     
+    UART_RX i2(
+         .CLK        (CLK_50M),
         .RESET_n    (RESET_n),
         .RX         (RX),
         .DATA_OUT   (DATA_RX_reg),
         .VALID      (VALID)
-	); 
+    ); 
 
     uart_tx i1 (
         .clk        (CLK_50M),
