@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Aug 22 20:40:58 2018
+# Process ID: 11092
+# Log file: C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS25 [get_ports [list {DATA[0]}]]
+set_property iostandard LVTTL [get_ports [list {DATA[15]} {DATA[14]} {DATA[13]} {DATA[12]} {DATA[11]} {DATA[10]} {DATA[9]} {DATA[8]} {DATA[7]} {DATA[6]} {DATA[5]} {DATA[4]} {DATA[3]} {DATA[2]} {DATA[1]} {DATA[0]}]]
+set_property iostandard LVTTL [get_ports [list CLKOUT_n]]
+save_constraints

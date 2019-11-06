@@ -1,0 +1,9 @@
+C:\Users\Administrator\source\repos\UART\UART\obj\Release\UART.Form1.resources
+C:\Users\Administrator\source\repos\UART\UART\obj\Release\UART.Properties.Resources.resources
+C:\Users\Administrator\source\repos\UART\UART\obj\Release\UART.csproj.GenerateResource.Cache
+C:\Users\Administrator\source\repos\UART\UART\obj\Release\UART.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\UART\UART\bin\Release\UART.exe.config
+C:\Users\Administrator\source\repos\UART\UART\bin\Release\UART.exe
+C:\Users\Administrator\source\repos\UART\UART\bin\Release\UART.pdb
+C:\Users\Administrator\source\repos\UART\UART\obj\Release\UART.exe
+C:\Users\Administrator\source\repos\UART\UART\obj\Release\UART.pdb

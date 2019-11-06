@@ -1,0 +1,1602 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TOP.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TOP"
+Output Format                      : NGC
+Target Device                      : xc6slx100-3-fgg676
+
+---- Source Options
+Top Module Name                    : TOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\ipcore_dir\pll.v" into library work
+Parsing module <pll>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\MIDLE_5.v" into library work
+Parsing module <MIDLE_5>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\uart_tx.v" into library work
+Parsing module <uart_tx>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\UART_RX.v" into library work
+Parsing module <UART_RX>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\MEAN.v" into library work
+Parsing module <MEAN>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" into library work
+Parsing module <LTC2203>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\DATA_TRANS.v" into library work
+Parsing module <DATA_TRANS>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\TOP.v" into library work
+Parsing module <TOP>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <TOP>.
+WARNING:HDLCompiler:872 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\TOP.v" Line 79: Using initial value of RESET_n since it is never assigned
+
+Elaborating module <pll>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <PLL_BASE(BANDWIDTH="OPTIMIZED",CLK_FEEDBACK="CLKFBOUT",COMPENSATION="INTERNAL",DIVCLK_DIVIDE=1,CLKFBOUT_MULT=20,CLKFBOUT_PHASE=0.0,CLKOUT0_DIVIDE=20,CLKOUT0_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKOUT1_DIVIDE=8,CLKOUT1_PHASE=0.0,CLKOUT1_DUTY_CYCLE=0.5,CLKIN_PERIOD=50.0,REF_JITTER=0.01)>.
+WARNING:HDLCompiler:1127 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\ipcore_dir\pll.v" Line 118: Assignment to clkout2_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\ipcore_dir\pll.v" Line 119: Assignment to clkout3_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\ipcore_dir\pll.v" Line 120: Assignment to clkout4_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\ipcore_dir\pll.v" Line 121: Assignment to clkout5_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\ipcore_dir\pll.v" Line 122: Assignment to locked_unused ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+
+Elaborating module <DATA_TRANS>.
+WARNING:HDLCompiler:413 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\DATA_TRANS.v" Line 113: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <UART_RX>.
+
+Elaborating module <uart_tx>.
+WARNING:HDLCompiler:413 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\uart_tx.v" Line 67: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:552 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\DATA_TRANS.v" Line 137: Input port RX is not connected on this instance
+
+Elaborating module <LTC2203>.
+WARNING:HDLCompiler:872 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" Line 157: Using initial value of MEAN_EN since it is never assigned
+
+Elaborating module <MEAN>.
+WARNING:HDLCompiler:413 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\MEAN.v" Line 80: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <MIDLE_5>.
+WARNING:HDLCompiler:634 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" Line 106: Net <DATA_OUT_U10_wire[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" Line 107: Net <DATA_OUT_U11_wire[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" Line 108: Net <DATA_OUT_U12_wire[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" Line 109: Net <DATA_OUT_U13_wire[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" Line 110: Net <DATA_OUT_U14_wire[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" Line 111: Net <DATA_OUT_U15_wire[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" Line 112: Net <DATA_OUT_U16_wire[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" Line 113: Net <DATA_OUT_U17_wire[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" Line 114: Net <DATA_OUT_U18_wire[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" Line 115: Net <DATA_OUT_U19_wire[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" Line 116: Net <DATA_OUT_U20_wire[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" Line 117: Net <DATA_OUT_U21_wire[15]> does not have a driver.
+WARNING:Xst:2972 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" line 336. All outputs of instance <mean_U23> of block <MEAN> are unconnected in block <LTC2203>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" line 343. All outputs of instance <mean_U24> of block <MEAN> are unconnected in block <LTC2203>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" line 350. All outputs of instance <mean_U25> of block <MEAN> are unconnected in block <LTC2203>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <TOP>.
+    Related source file is "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\TOP.v".
+    Found 4-bit register for signal <LED>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_1_o_add_1_OUT> created at line 90.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  36 D-type flip-flop(s).
+Unit <TOP> synthesized.
+
+Synthesizing Unit <pll>.
+    Related source file is "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\ipcore_dir\pll.v".
+    Summary:
+	no macro.
+Unit <pll> synthesized.
+
+Synthesizing Unit <DATA_TRANS>.
+    Related source file is "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\DATA_TRANS.v".
+WARNING:Xst:2898 - Port 'RX', unconnected in block instance 'i1', is tied to GND.
+WARNING:Xst:647 - Input <CLK_20M> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <SEND_REQ>.
+    Found 8-bit register for signal <CHANNEL>.
+    Found 256-bit register for signal <n0066[255:0]>.
+    Found 8-bit register for signal <SEND_DATA>.
+    Found 8-bit register for signal <DATA_RX>.
+    Found 8-bit register for signal <STATE>.
+    Found finite state machine <FSM_0> for signal <STATE>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 13                                             |
+    | Clock              | CLK_50M (rising_edge)                          |
+    | Reset              | _n0117 (positive)                              |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00000000                                       |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit adder for signal <CHANNEL[7]_GND_6_o_add_13_OUT> created at line 113.
+    Found 8-bit 16-to-1 multiplexer for signal <CHANNEL[3]_DATA[15][7]_wide_mux_5_OUT> created at line 82.
+    Found 8-bit 16-to-1 multiplexer for signal <CHANNEL[3]_DATA[15][15]_wide_mux_10_OUT> created at line 99.
+    Found 8-bit comparator greater for signal <n0004> created at line 81
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 281 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <DATA_TRANS> synthesized.
+
+Synthesizing Unit <UART_RX>.
+    Related source file is "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\UART_RX.v".
+        BAUDRATE = 115200
+        FREQ = 50000000
+    Found 32-bit register for signal <cnt_clk>.
+    Found 4-bit register for signal <cnt_bit>.
+    Found 8-bit register for signal <DATA_OUT_reg>.
+    Found 1-bit register for signal <VALID>.
+    Found 8-bit register for signal <DATA_OUT>.
+    Found 1-bit register for signal <BUSY>.
+    Found 5-bit subtractor for signal <GND_7_o_GND_7_o_sub_23_OUT> created at line 78.
+    Found 32-bit adder for signal <cnt_clk[31]_GND_7_o_add_9_OUT> created at line 53.
+    Found 4-bit adder for signal <cnt_bit[3]_GND_7_o_add_14_OUT> created at line 67.
+    Found 32-bit comparator lessequal for signal <n0030> created at line 78
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  54 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   9 Multiplexer(s).
+Unit <UART_RX> synthesized.
+
+Synthesizing Unit <uart_tx>.
+    Related source file is "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\uart_tx.v".
+        BAUDRATE = 115200
+        FREQ = 50000000
+WARNING:Xst:647 - Input <RX> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <DATA>.
+    Found 32-bit register for signal <cnt_clk>.
+    Found 4-bit register for signal <cnt_bit>.
+    Found 1-bit register for signal <TX>.
+    Found 1-bit register for signal <IDLE>.
+    Found 32-bit adder for signal <cnt_clk[31]_GND_8_o_add_6_OUT> created at line 56.
+    Found 4-bit adder for signal <cnt_bit[3]_GND_8_o_add_10_OUT> created at line 67.
+    Found 3-bit subtractor for signal <GND_8_o_GND_8_o_sub_19_OUT<2:0>> created at line 93.
+    Found 1-bit 8-to-1 multiplexer for signal <GND_8_o_DATA[7]_Mux_19_o> created at line 93.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  46 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <uart_tx> synthesized.
+
+Synthesizing Unit <LTC2203>.
+    Related source file is "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v".
+        FIR_EN = 0
+WARNING:Xst:647 - Input <DATA_IN_U10> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA_IN_U11> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA_IN_U12> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA_IN_U13> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA_IN_U14> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA_IN_U15> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA_IN_U16> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA_IN_U17> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA_IN_U18> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA_IN_U19> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA_IN_U20> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA_IN_U21> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLK_50M> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U10_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U11_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U12_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U13_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U14_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U15_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U16_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U17_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U18_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U19_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U20_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U21_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U10_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U11_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U12_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U13_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U14_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U15_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U16_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U17_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U18_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U19_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U20_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U21_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U22_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U23_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U24_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKOUT_U25_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" line 336: Output port <DATA_OUT> of the instance <mean_U23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" line 343: Output port <DATA_OUT> of the instance <mean_U24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\LTC2203.v" line 350: Output port <DATA_OUT> of the instance <mean_U25> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <DATA_OUT_U10_wire> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <DATA_OUT_U11_wire> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <DATA_OUT_U12_wire> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <DATA_OUT_U13_wire> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <DATA_OUT_U14_wire> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <DATA_OUT_U15_wire> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <DATA_OUT_U16_wire> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <DATA_OUT_U17_wire> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <DATA_OUT_U18_wire> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <DATA_OUT_U19_wire> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <DATA_OUT_U20_wire> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <DATA_OUT_U21_wire> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 16-bit register for signal <DATA_IN_U22_reg>.
+    Found 16-bit register for signal <DATA_IN_U23_reg>.
+    Found 16-bit register for signal <DATA_IN_U24_reg>.
+    Found 16-bit register for signal <DATA_IN_U25_reg>.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+Unit <LTC2203> synthesized.
+
+Synthesizing Unit <MEAN>.
+    Related source file is "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\MEAN.v".
+        AMOUNT = 25
+    Found 400-bit register for signal <n0132[399:0]>.
+    Found 320-bit register for signal <n0138[319:0]>.
+    Found 32-bit register for signal <SUM>.
+    Found 32-bit register for signal <AVERAGE>.
+    Found 8-bit register for signal <NUM>.
+    Found 17-bit adder for signal <DATA[0][15]_DATA[1][15]_add_51_OUT> created at line 76.
+    Found 18-bit adder for signal <DATA[0][15]_DATA[2][15]_add_52_OUT> created at line 76.
+    Found 19-bit adder for signal <DATA[0][15]_DATA[3][15]_add_53_OUT> created at line 76.
+    Found 20-bit adder for signal <DATA[0][15]_DATA[4][15]_add_54_OUT> created at line 76.
+    Found 21-bit adder for signal <DATA[0][15]_DATA[5][15]_add_55_OUT> created at line 76.
+    Found 22-bit adder for signal <DATA[0][15]_DATA[6][15]_add_56_OUT> created at line 76.
+    Found 23-bit adder for signal <DATA[0][15]_DATA[7][15]_add_57_OUT> created at line 76.
+    Found 24-bit adder for signal <DATA[0][15]_DATA[8][15]_add_58_OUT> created at line 76.
+    Found 25-bit adder for signal <DATA[0][15]_DATA[9][15]_add_59_OUT> created at line 76.
+    Found 26-bit adder for signal <DATA[0][15]_DATA[10][15]_add_60_OUT> created at line 76.
+    Found 27-bit adder for signal <DATA[0][15]_DATA[11][15]_add_61_OUT> created at line 76.
+    Found 28-bit adder for signal <DATA[0][15]_DATA[12][15]_add_62_OUT> created at line 76.
+    Found 29-bit adder for signal <DATA[0][15]_DATA[13][15]_add_63_OUT> created at line 76.
+    Found 30-bit adder for signal <DATA[0][15]_DATA[14][15]_add_64_OUT> created at line 76.
+    Found 31-bit adder for signal <DATA[0][15]_DATA[15][15]_add_65_OUT> created at line 76.
+    Found 32-bit adder for signal <n0321> created at line 76.
+    Found 32-bit adder for signal <n0324> created at line 76.
+    Found 32-bit adder for signal <n0327> created at line 76.
+    Found 32-bit adder for signal <DATA[0][15]_SUM[31]_mux_77_OUT> created at line 76.
+    Found 8-bit adder for signal <NUM[7]_GND_11_o_add_72_OUT> created at line 80.
+    Found 8-bit comparator lessequal for signal <n0002> created at line 74
+    Found 8-bit comparator lessequal for signal <n0055> created at line 75
+    Found 8-bit comparator greater for signal <NUM[7]_GND_11_o_LessThan_72_o> created at line 79
+    Summary:
+	inferred  20 Adder/Subtractor(s).
+	inferred 792 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  45 Multiplexer(s).
+Unit <MEAN> synthesized.
+
+Synthesizing Unit <div_32s_6s>.
+    Related source file is "".
+    Found 32-bit subtractor for signal <a[31]_unary_minus_1_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_12_o_BUS_0001_add_70_OUT[32:0]> created at line 0.
+    Found 38-bit adder for signal <GND_12_o_b[5]_add_5_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_12_o_b[5]_add_7_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_12_o_b[5]_add_9_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_12_o_b[5]_add_11_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_12_o_b[5]_add_13_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_12_o_b[5]_add_15_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[5]_add_17_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_59_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_61_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_63_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_65_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_67_OUT[31:0]> created at line 0.
+    Found 38-bit comparator greater for signal <BUS_0001_INV_1216_o> created at line 0
+    Found 37-bit comparator greater for signal <BUS_0002_INV_1215_o> created at line 0
+    Found 36-bit comparator greater for signal <BUS_0003_INV_1214_o> created at line 0
+    Found 35-bit comparator greater for signal <BUS_0004_INV_1213_o> created at line 0
+    Found 34-bit comparator greater for signal <BUS_0005_INV_1212_o> created at line 0
+    Found 33-bit comparator greater for signal <BUS_0006_INV_1211_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0007_INV_1210_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0008_INV_1209_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0009_INV_1208_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0010_INV_1207_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0011_INV_1206_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0012_INV_1205_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0013_INV_1204_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0014_INV_1203_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0015_INV_1202_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0016_INV_1201_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0017_INV_1200_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0018_INV_1199_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0019_INV_1198_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0020_INV_1197_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0021_INV_1196_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0022_INV_1195_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0023_INV_1194_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0024_INV_1193_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0025_INV_1192_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0026_INV_1191_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0027_INV_1190_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0028_INV_1189_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0029_INV_1188_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0030_INV_1187_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0031_INV_1186_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0032_INV_1185_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0033_INV_1184_o> created at line 0
+    Summary:
+	inferred  34 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 933 Multiplexer(s).
+Unit <div_32s_6s> synthesized.
+
+Synthesizing Unit <MIDLE_5>.
+    Related source file is "C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\MIDLE_5.v".
+    Found 16-bit register for signal <DATA_OUT>.
+    Found 16-bit comparator lessequal for signal <n0000> created at line 19
+    Found 16-bit comparator lessequal for signal <n0002> created at line 19
+    Found 16-bit comparator lessequal for signal <n0005> created at line 19
+    Found 16-bit comparator lessequal for signal <n0008> created at line 19
+    Found 16-bit comparator lessequal for signal <n0011> created at line 20
+    Found 16-bit comparator lessequal for signal <n0014> created at line 20
+    Found 16-bit comparator lessequal for signal <n0019> created at line 21
+    Found 16-bit comparator lessequal for signal <n0026> created at line 31
+    Found 16-bit comparator lessequal for signal <n0028> created at line 31
+    Found 16-bit comparator lessequal for signal <n0031> created at line 31
+    Found 16-bit comparator lessequal for signal <n0034> created at line 31
+    Found 16-bit comparator lessequal for signal <n0037> created at line 32
+    Found 16-bit comparator lessequal for signal <n0040> created at line 32
+    Found 16-bit comparator lessequal for signal <n0045> created at line 33
+    Found 16-bit comparator lessequal for signal <n0053> created at line 43
+    Found 16-bit comparator lessequal for signal <n0056> created at line 43
+    Found 16-bit comparator lessequal for signal <n0059> created at line 44
+    Found 16-bit comparator lessequal for signal <n0065> created at line 45
+    Found 16-bit comparator lessequal for signal <n0074> created at line 55
+    Found 16-bit comparator lessequal for signal <n0081> created at line 57
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred  20 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <MIDLE_5> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 62
+ 17-bit adder                                          : 1
+ 18-bit adder                                          : 1
+ 19-bit adder                                          : 1
+ 20-bit adder                                          : 1
+ 21-bit adder                                          : 1
+ 22-bit adder                                          : 1
+ 23-bit adder                                          : 1
+ 24-bit adder                                          : 1
+ 25-bit adder                                          : 1
+ 26-bit adder                                          : 1
+ 27-bit adder                                          : 1
+ 28-bit adder                                          : 1
+ 29-bit adder                                          : 1
+ 3-bit subtractor                                      : 1
+ 30-bit adder                                          : 1
+ 31-bit adder                                          : 1
+ 32-bit adder                                          : 33
+ 32-bit subtractor                                     : 1
+ 33-bit adder                                          : 2
+ 34-bit adder                                          : 1
+ 35-bit adder                                          : 1
+ 36-bit adder                                          : 1
+ 37-bit adder                                          : 1
+ 38-bit adder                                          : 1
+ 4-bit adder                                           : 2
+ 5-bit subtractor                                      : 1
+ 8-bit adder                                           : 2
+# Registers                                            : 33
+ 1-bit register                                        : 5
+ 16-bit register                                       : 10
+ 256-bit register                                      : 1
+ 32-bit register                                       : 5
+ 320-bit register                                      : 1
+ 4-bit register                                        : 3
+ 400-bit register                                      : 1
+ 8-bit register                                        : 7
+# Comparators                                          : 158
+ 16-bit comparator lessequal                           : 120
+ 32-bit comparator greater                             : 27
+ 32-bit comparator lessequal                           : 1
+ 33-bit comparator greater                             : 1
+ 34-bit comparator greater                             : 1
+ 35-bit comparator greater                             : 1
+ 36-bit comparator greater                             : 1
+ 37-bit comparator greater                             : 1
+ 38-bit comparator greater                             : 1
+ 8-bit comparator greater                              : 2
+ 8-bit comparator lessequal                            : 2
+# Multiplexers                                         : 1016
+ 1-bit 2-to-1 multiplexer                              : 936
+ 1-bit 8-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 69
+ 32-bit 2-to-1 multiplexer                             : 5
+ 33-bit 2-to-1 multiplexer                             : 1
+ 8-bit 16-to-1 multiplexer                             : 2
+ 8-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <DATA_0_120> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_121> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_122> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_123> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_124> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_125> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_126> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_127> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_128> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_129> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_130> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_131> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_132> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_133> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_134> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_135> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_136> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_137> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_138> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_139> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_140> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_141> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_142> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_143> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_96> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_97> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_98> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_99> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_100> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_101> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_102> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_103> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_104> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_105> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_106> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_107> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_108> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_109> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_110> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_111> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_112> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_113> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_114> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_115> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_116> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_117> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_118> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_119> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_168> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_169> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_170> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_171> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_172> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_173> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_174> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_175> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_176> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_177> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_178> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_179> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_180> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_181> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_182> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_183> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_184> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_185> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_186> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_187> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_188> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_189> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_190> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_191> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_144> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_145> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_146> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_147> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_148> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_149> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_150> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_151> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_152> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_153> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_154> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_155> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_156> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_157> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_158> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_159> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_160> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_161> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_162> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_163> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_164> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_165> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_166> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_167> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_24> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_25> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_26> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_27> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_28> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_29> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_30> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_31> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_32> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_33> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_34> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_35> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_36> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_37> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_38> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_39> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_40> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_41> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_42> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_43> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_44> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_45> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_46> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_47> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_0> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_1> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_2> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_3> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_4> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_5> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_6> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_7> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_8> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_9> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_10> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_11> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_12> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_13> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_14> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_15> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_16> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_17> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_18> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_19> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_20> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_21> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_22> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_23> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_72> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_73> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_74> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_75> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_76> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_77> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_78> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_79> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_80> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_81> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_82> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_83> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_84> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_85> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_86> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_87> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_88> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_89> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_90> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_91> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_92> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_93> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_94> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_95> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_48> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_49> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_50> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_51> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_52> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_53> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_54> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_55> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_56> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_57> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_58> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_59> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_60> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_61> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_62> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_63> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_64> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_65> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_66> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_67> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_68> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_69> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_70> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_71> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <AVERAGE_15> of sequential type is unconnected in block <mean_U22>.
+WARNING:Xst:2677 - Node <AVERAGE_16> of sequential type is unconnected in block <mean_U22>.
+WARNING:Xst:2677 - Node <AVERAGE_17> of sequential type is unconnected in block <mean_U22>.
+WARNING:Xst:2677 - Node <AVERAGE_18> of sequential type is unconnected in block <mean_U22>.
+WARNING:Xst:2677 - Node <AVERAGE_19> of sequential type is unconnected in block <mean_U22>.
+WARNING:Xst:2677 - Node <AVERAGE_20> of sequential type is unconnected in block <mean_U22>.
+WARNING:Xst:2677 - Node <AVERAGE_21> of sequential type is unconnected in block <mean_U22>.
+WARNING:Xst:2677 - Node <AVERAGE_22> of sequential type is unconnected in block <mean_U22>.
+WARNING:Xst:2677 - Node <AVERAGE_23> of sequential type is unconnected in block <mean_U22>.
+WARNING:Xst:2677 - Node <AVERAGE_24> of sequential type is unconnected in block <mean_U22>.
+WARNING:Xst:2677 - Node <AVERAGE_25> of sequential type is unconnected in block <mean_U22>.
+WARNING:Xst:2677 - Node <AVERAGE_26> of sequential type is unconnected in block <mean_U22>.
+WARNING:Xst:2677 - Node <AVERAGE_27> of sequential type is unconnected in block <mean_U22>.
+WARNING:Xst:2677 - Node <AVERAGE_28> of sequential type is unconnected in block <mean_U22>.
+WARNING:Xst:2677 - Node <AVERAGE_29> of sequential type is unconnected in block <mean_U22>.
+WARNING:Xst:2677 - Node <AVERAGE_30> of sequential type is unconnected in block <mean_U22>.
+
+Synthesizing (advanced) Unit <DATA_TRANS>.
+The following registers are absorbed into counter <CHANNEL>: 1 register on signal <CHANNEL>.
+Unit <DATA_TRANS> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MEAN>.
+The following registers are absorbed into counter <NUM>: 1 register on signal <NUM>.
+	The following adders/subtractors are grouped into adder tree <Madd_DATA[0][15]_SUM[31]_mux_77_OUT1> :
+ 	<Madd_DATA[0][15]_DATA[1][15]_add_51_OUT> in block <MEAN>, 	<Madd_DATA[0][15]_DATA[2][15]_add_52_OUT> in block <MEAN>, 	<Madd_DATA[0][15]_DATA[3][15]_add_53_OUT> in block <MEAN>, 	<Madd_DATA[0][15]_DATA[4][15]_add_54_OUT> in block <MEAN>, 	<Madd_DATA[0][15]_DATA[5][15]_add_55_OUT> in block <MEAN>, 	<Madd_DATA[0][15]_DATA[6][15]_add_56_OUT> in block <MEAN>, 	<Madd_DATA[0][15]_DATA[7][15]_add_57_OUT> in block <MEAN>, 	<Madd_DATA[0][15]_DATA[8][15]_add_58_OUT> in block <MEAN>, 	<Madd_DATA[0][15]_DATA[9][15]_add_59_OUT> in block <MEAN>, 	<Madd_DATA[0][15]_DATA[10][15]_add_60_OUT> in block <MEAN>, 	<Madd_DATA[0][15]_DATA[11][15]_add_61_OUT> in block <MEAN>, 	<Madd_DATA[0][15]_DATA[12][15]_add_62_OUT> in block <MEAN>, 	<Madd_DATA[0][15]_DATA[13][15]_add_63_OUT> in block <MEAN>, 	<Madd_DATA[0][15]_DATA[14][15]_add_64_OUT> in block <MEAN>, 	<Madd_DATA[0][15]_DATA[15][15]_add_65_OUT> in block <MEAN>, 	<Madd_n0321> in block <MEAN>, 	<Madd_n0324> in block <MEAN>, 	<Madd_n0327> in block <MEAN>,
+	<Madd_DATA[0][15]_SUM[31]_mux_77_OUT> in block <MEAN>.
+Unit <MEAN> synthesized (advanced).
+
+Synthesizing (advanced) Unit <TOP>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <TOP> synthesized (advanced).
+
+Synthesizing (advanced) Unit <UART_RX>.
+The following registers are absorbed into counter <cnt_clk>: 1 register on signal <cnt_clk>.
+The following registers are absorbed into counter <cnt_bit>: 1 register on signal <cnt_bit>.
+Unit <UART_RX> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart_tx>.
+The following registers are absorbed into counter <cnt_clk>: 1 register on signal <cnt_clk>.
+The following registers are absorbed into counter <cnt_bit>: 1 register on signal <cnt_bit>.
+Unit <uart_tx> synthesized (advanced).
+WARNING:Xst:2677 - Node <AVERAGE_15> of sequential type is unconnected in block <MEAN>.
+WARNING:Xst:2677 - Node <AVERAGE_16> of sequential type is unconnected in block <MEAN>.
+WARNING:Xst:2677 - Node <AVERAGE_17> of sequential type is unconnected in block <MEAN>.
+WARNING:Xst:2677 - Node <AVERAGE_18> of sequential type is unconnected in block <MEAN>.
+WARNING:Xst:2677 - Node <AVERAGE_19> of sequential type is unconnected in block <MEAN>.
+WARNING:Xst:2677 - Node <AVERAGE_20> of sequential type is unconnected in block <MEAN>.
+WARNING:Xst:2677 - Node <AVERAGE_21> of sequential type is unconnected in block <MEAN>.
+WARNING:Xst:2677 - Node <AVERAGE_22> of sequential type is unconnected in block <MEAN>.
+WARNING:Xst:2677 - Node <AVERAGE_23> of sequential type is unconnected in block <MEAN>.
+WARNING:Xst:2677 - Node <AVERAGE_24> of sequential type is unconnected in block <MEAN>.
+WARNING:Xst:2677 - Node <AVERAGE_25> of sequential type is unconnected in block <MEAN>.
+WARNING:Xst:2677 - Node <AVERAGE_26> of sequential type is unconnected in block <MEAN>.
+WARNING:Xst:2677 - Node <AVERAGE_27> of sequential type is unconnected in block <MEAN>.
+WARNING:Xst:2677 - Node <AVERAGE_28> of sequential type is unconnected in block <MEAN>.
+WARNING:Xst:2677 - Node <AVERAGE_29> of sequential type is unconnected in block <MEAN>.
+WARNING:Xst:2677 - Node <AVERAGE_30> of sequential type is unconnected in block <MEAN>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 36
+ 3-bit subtractor                                      : 1
+ 32-bit adder                                          : 32
+ 32-bit subtractor                                     : 1
+ 33-bit adder                                          : 1
+ 5-bit subtractor                                      : 1
+# Adder Trees                                          : 1
+ 32-bit / 20-inputs adder tree                         : 1
+# Counters                                             : 7
+ 32-bit up counter                                     : 3
+ 4-bit up counter                                      : 2
+ 8-bit up counter                                      : 2
+# Registers                                            : 1233
+ Flip-Flops                                            : 1233
+# Comparators                                          : 158
+ 16-bit comparator lessequal                           : 120
+ 32-bit comparator greater                             : 27
+ 32-bit comparator lessequal                           : 1
+ 33-bit comparator greater                             : 1
+ 34-bit comparator greater                             : 1
+ 35-bit comparator greater                             : 1
+ 36-bit comparator greater                             : 1
+ 37-bit comparator greater                             : 1
+ 38-bit comparator greater                             : 1
+ 8-bit comparator greater                              : 2
+ 8-bit comparator lessequal                            : 2
+# Multiplexers                                         : 1689
+ 1-bit 2-to-1 multiplexer                              : 1656
+ 1-bit 8-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 24
+ 32-bit 2-to-1 multiplexer                             : 4
+ 33-bit 2-to-1 multiplexer                             : 1
+ 8-bit 16-to-1 multiplexer                             : 2
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <ins2/FSM_0> on signal <STATE[1:9]> with one-hot encoding.
+-----------------------
+ State    | Encoding
+-----------------------
+ 00000000 | 000000001
+ 00000001 | 000000010
+ 00000010 | 000000100
+ 00000011 | 000001000
+ 00000100 | 000010000
+ 00000101 | 000100000
+ 00000110 | 001000000
+ 00000111 | 010000000
+ 00001000 | 100000000
+-----------------------
+WARNING:Xst:2677 - Node <count_27> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <count_28> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <count_29> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <count_30> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <count_31> of sequential type is unconnected in block <TOP>.
+INFO:Xst:1901 - Instance pll_base_inst in unit pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
+
+Optimizing unit <TOP> ...
+
+Optimizing unit <LTC2203> ...
+
+Optimizing unit <pll> ...
+
+Optimizing unit <MEAN> ...
+
+Optimizing unit <MIDLE_5> ...
+
+Optimizing unit <div_32s_6s> ...
+
+Optimizing unit <DATA_TRANS> ...
+
+Optimizing unit <UART_RX> ...
+
+Optimizing unit <uart_tx> ...
+WARNING:Xst:1710 - FF/Latch <DATA_0_120> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_121> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_122> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_123> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_124> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_125> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_126> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_127> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_128> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_129> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_130> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_131> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_132> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_133> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_134> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_135> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_136> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_137> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_138> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_139> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_140> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_141> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_142> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_143> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_96> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_97> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_98> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_99> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_100> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_101> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_102> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_103> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_104> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_105> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_106> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_107> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_108> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_109> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_110> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_111> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_112> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_113> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_114> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_115> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_116> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_117> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_118> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_119> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_168> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_169> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_170> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_171> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_172> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_173> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_174> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_175> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_176> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_177> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_178> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_179> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_180> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_181> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_182> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_183> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_184> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_185> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_186> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_187> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_188> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_189> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_190> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_191> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_144> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_145> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_146> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_147> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_148> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_149> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_150> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_151> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_152> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_153> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_154> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_155> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_156> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_157> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_158> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_159> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_160> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_161> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_162> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_163> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_164> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_165> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_166> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_167> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_24> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_25> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_26> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_27> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_28> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_29> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_30> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_31> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_32> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_33> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_34> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_35> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_36> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_37> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_38> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_39> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_40> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_41> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_42> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_43> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_44> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_45> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_46> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_47> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_0> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_1> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_2> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_3> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_4> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_5> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_6> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_7> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_8> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_9> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_10> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_11> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_12> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_13> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_14> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_15> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_16> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_17> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_18> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_19> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_20> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_21> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_22> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_23> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_72> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_73> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_74> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_75> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_76> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_77> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_78> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_79> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_80> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_81> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_82> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_83> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_84> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_85> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_86> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_87> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_88> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_89> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_90> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_91> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_92> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_93> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_94> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_95> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_48> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_49> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_50> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_51> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_52> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_53> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_54> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_55> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_56> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_57> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_58> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_59> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_60> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_61> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_62> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_63> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_64> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_65> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_66> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_67> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_68> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_69> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_70> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_0_71> (without init value) has a constant value of 0 in block <ins2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NUM_5> has a constant value of 0 in block <mean_U22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NUM_6> has a constant value of 0 in block <mean_U22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NUM_7> has a constant value of 0 in block <mean_U22>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <SUM_21> in Unit <mean_U22> is equivalent to the following 10 FFs/Latches, which will be removed : <SUM_22> <SUM_23> <SUM_24> <SUM_25> <SUM_26> <SUM_27> <SUM_28> <SUM_29> <SUM_30> <SUM_31> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TOP, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1152
+ Flip-Flops                                            : 1152
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : TOP.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 7751
+#      GND                         : 7
+#      INV                         : 49
+#      LUT1                        : 93
+#      LUT2                        : 57
+#      LUT3                        : 1205
+#      LUT4                        : 2028
+#      LUT5                        : 701
+#      LUT6                        : 1011
+#      MUXCY                       : 1705
+#      MUXF7                       : 39
+#      MUXF8                       : 16
+#      VCC                         : 11
+#      XORCY                       : 829
+# FlipFlops/Latches                : 1152
+#      FD                          : 854
+#      FDE                         : 208
+#      FDR                         : 49
+#      FDRE                        : 40
+#      FDS                         : 1
+# Clock Buffers                    : 6
+#      BUFG                        : 2
+#      BUFGP                       : 4
+# IO Buffers                       : 71
+#      IBUF                        : 65
+#      IBUFG                       : 1
+#      OBUF                        : 5
+# Others                           : 1
+#      PLL_ADV                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx100fgg676-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1152  out of  126576     0%  
+ Number of Slice LUTs:                 5144  out of  63288     8%  
+    Number used as Logic:              5144  out of  63288     8%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   5707
+   Number with an unused Flip Flop:    4555  out of   5707    79%  
+   Number with an unused LUT:           563  out of   5707     9%  
+   Number of fully used LUT-FF pairs:   589  out of   5707    10%  
+   Number of unique control sets:        32
+
+IO Utilization: 
+ Number of IOs:                         295
+ Number of bonded IOBs:                  74  out of    480    15%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                6  out of     16    37%  
+ Number of PLL_ADVs:                      1  out of      6    16%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+ins1/pll_base_inst/CLKOUT0         | BUFG                   | 890   |
+CLKOUT_U24_n                       | BUFGP                  | 16    |
+CLKOUT_U22_n                       | BUFGP                  | 16    |
+CLKOUT_U23_n                       | BUFGP                  | 16    |
+CLKOUT_U25_n                       | BUFGP                  | 16    |
+ins1/pll_base_inst/CLKOUT1         | BUFG                   | 198   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 75.468ns (Maximum Frequency: 13.251MHz)
+   Minimum input arrival time before clock: 3.521ns
+   Maximum output required time after clock: 3.634ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ins1/pll_base_inst/CLKOUT0'
+  Clock period: 75.468ns (frequency: 13.251MHz)
+  Total number of paths / destination ports: 362684676613861480000000000000000000000 / 991
+-------------------------------------------------------------------------
+Delay:               75.468ns (Levels of Logic = 149)
+  Source:            ins3/mean_U22/SUM_21 (FF)
+  Destination:       ins3/mean_U22/AVERAGE_31 (FF)
+  Source Clock:      ins1/pll_base_inst/CLKOUT0 rising
+  Destination Clock: ins1/pll_base_inst/CLKOUT0 rising
+
+  Data Path: ins3/mean_U22/SUM_21 to ins3/mean_U22/AVERAGE_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q             366   0.447   2.076  SUM_21 (SUM_21)
+     begin scope: 'ins3/mean_U22/SUM[31]_GND_11_o_div_70:a<21>'
+     INV:I->O              1   0.206   0.000  Msub_a[31]_unary_minus_1_OUT_lut<21>_INV_0 (Msub_a[31]_unary_minus_1_OUT_lut<21>)
+     MUXCY:S->O            1   0.172   0.000  Msub_a[31]_unary_minus_1_OUT_cy<21> (Msub_a[31]_unary_minus_1_OUT_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_a[31]_unary_minus_1_OUT_cy<22> (Msub_a[31]_unary_minus_1_OUT_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_a[31]_unary_minus_1_OUT_cy<23> (Msub_a[31]_unary_minus_1_OUT_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_a[31]_unary_minus_1_OUT_cy<24> (Msub_a[31]_unary_minus_1_OUT_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_a[31]_unary_minus_1_OUT_cy<25> (Msub_a[31]_unary_minus_1_OUT_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_a[31]_unary_minus_1_OUT_cy<26> (Msub_a[31]_unary_minus_1_OUT_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_a[31]_unary_minus_1_OUT_cy<27> (Msub_a[31]_unary_minus_1_OUT_cy<27>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_a[31]_unary_minus_1_OUT_cy<28> (Msub_a[31]_unary_minus_1_OUT_cy<28>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_a[31]_unary_minus_1_OUT_cy<29> (Msub_a[31]_unary_minus_1_OUT_cy<29>)
+     XORCY:CI->O          28   0.180   1.579  Msub_a[31]_unary_minus_1_OUT_xor<30> (a[31]_unary_minus_1_OUT<30>)
+     LUT6:I1->O            1   0.203   0.000  Mmux_a[31]_a[31]_MUX_892_o15_SW0_SW0_SW2_G (N1724)
+     MUXF7:I1->O          12   0.140   0.909  Mmux_a[31]_a[31]_MUX_892_o15_SW0_SW0_SW2 (N216)
+     LUT6:I5->O           19   0.205   1.072  BUS_0009_INV_1208_o_SW0 (N24)
+     LUT5:I4->O           17   0.205   1.028  Mmux_a[31]_a[31]_MUX_892_o11 (a[31]_a[31]_MUX_893_o)
+     LUT6:I5->O            7   0.205   0.774  BUS_0010_INV_1207_o (BUS_0010_INV_1207_o1)
+     LUT6:I5->O           10   0.205   0.857  BUS_0011_INV_1206_o11_1 (BUS_0011_INV_1206_o11)
+     LUT6:I5->O           15   0.205   1.086  Mmux_a[31]_a[31]_MUX_1000_o12511 (Mmux_a[31]_a[31]_MUX_1000_o1251)
+     LUT3:I1->O            4   0.203   0.684  BUS_0012_INV_1205_o1_SW4 (N1484)
+     LUT6:I5->O           19   0.205   1.300  Mmux_a[31]_a[31]_MUX_1000_o1231 (a[31]_a[31]_MUX_991_o)
+     LUT6:I3->O            2   0.205   0.617  BUS_0013_INV_1204_o1_1 (BUS_0013_INV_1204_o1)
+     LUT6:I5->O           10   0.205   0.961  Mmux_a[31]_a[31]_MUX_1052_o1711 (Mmux_a[31]_a[31]_MUX_1052_o171)
+     LUT6:I4->O            8   0.203   0.803  Madd_a[31]_GND_12_o_add_31_OUT_cy<28>11 (Madd_a[31]_GND_12_o_add_31_OUT_cy<28>)
+     LUT6:I5->O           14   0.205   1.062  Mmux_a[31]_a[31]_MUX_1052_o112 (a[31]_a[31]_MUX_1053_o)
+     LUT5:I3->O           11   0.203   0.883  BUS_0015_INV_1202_o12_SW0 (N1292)
+     LUT6:I5->O            7   0.205   1.021  Mmux_a[31]_a[31]_MUX_1084_o141 (a[31]_a[31]_MUX_1088_o)
+     LUT6:I2->O            4   0.203   0.684  Mmux_a[31]_a[31]_MUX_1116_o191_SW0_1 (Mmux_a[31]_a[31]_MUX_1116_o191_SW0)
+     LUT6:I5->O            6   0.205   1.089  Mmux_a[31]_a[31]_MUX_1116_o151 (a[31]_a[31]_MUX_1121_o)
+     LUT6:I1->O            9   0.203   0.830  BUS_0017_INV_1200_o22_1 (BUS_0017_INV_1200_o22)
+     LUT6:I5->O           10   0.205   1.201  Mmux_a[31]_a[31]_MUX_1148_o151 (a[31]_a[31]_MUX_1153_o)
+     LUT6:I1->O           14   0.203   0.958  BUS_0018_INV_1199_o22_2 (BUS_0018_INV_1199_o221)
+     LUT6:I5->O            2   0.205   0.845  Mmux_a[31]_a[31]_MUX_1180_o115_1 (Mmux_a[31]_a[31]_MUX_1180_o115)
+     LUT6:I3->O            2   0.205   0.721  Mmux_a[31]_a[31]_MUX_1212_o141_SW2 (N855)
+     LUT6:I4->O           10   0.203   0.857  Mmux_a[31]_a[31]_MUX_1212_o141 (a[31]_a[31]_MUX_1216_o)
+     LUT6:I5->O            7   0.205   0.774  BUS_0020_INV_1197_o23_2 (BUS_0020_INV_1197_o231)
+     LUT5:I4->O            5   0.205   1.059  Mmux_a[31]_a[31]_MUX_1244_o1161 (a[31]_a[31]_MUX_1260_o)
+     LUT6:I1->O            3   0.203   0.879  BUS_0021_INV_1196_o21_1 (BUS_0021_INV_1196_o211)
+     LUT6:I3->O            5   0.205   0.715  Mmux_a[31]_a[31]_MUX_1276_o1161 (a[31]_a[31]_MUX_1292_o)
+     LUT6:I5->O            4   0.205   0.684  BUS_0022_INV_1195_o21 (BUS_0022_INV_1195_o2)
+     LUT6:I5->O            8   0.205   0.803  BUS_0022_INV_1195_o24_2 (BUS_0022_INV_1195_o241)
+     LUT6:I5->O            7   0.205   1.138  Mmux_a[31]_a[31]_MUX_1308_o171 (a[31]_a[31]_MUX_1315_o)
+     LUT6:I0->O            9   0.203   0.934  BUS_0023_INV_1194_o33_2 (BUS_0023_INV_1194_o331)
+     LUT6:I4->O            3   0.203   0.995  Mmux_a[31]_a[31]_MUX_1340_o1151 (a[31]_a[31]_MUX_1355_o)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_BUS_0024_INV_1193_o_lut<1> (Mcompar_BUS_0024_INV_1193_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0024_INV_1193_o_cy<1> (Mcompar_BUS_0024_INV_1193_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0024_INV_1193_o_cy<2> (Mcompar_BUS_0024_INV_1193_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0024_INV_1193_o_cy<3> (Mcompar_BUS_0024_INV_1193_o_cy<3>)
+     MUXCY:CI->O          66   0.213   1.654  Mcompar_BUS_0024_INV_1193_o_cy<4> (Mcompar_BUS_0024_INV_1193_o_cy<4>)
+     LUT5:I4->O            6   0.205   1.089  a[31]_a[31]_MUX_1424_o11 (a[31]_a[31]_MUX_1424_o_bdd0)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_BUS_0025_INV_1192_o_lut<0> (Mcompar_BUS_0025_INV_1192_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0025_INV_1192_o_cy<0> (Mcompar_BUS_0025_INV_1192_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0025_INV_1192_o_cy<1> (Mcompar_BUS_0025_INV_1192_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0025_INV_1192_o_cy<2> (Mcompar_BUS_0025_INV_1192_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0025_INV_1192_o_cy<3> (Mcompar_BUS_0025_INV_1192_o_cy<3>)
+     MUXCY:CI->O          88   0.213   1.799  Mcompar_BUS_0025_INV_1192_o_cy<4> (Mcompar_BUS_0025_INV_1192_o_cy<4>)
+     LUT5:I4->O            6   0.205   1.089  a[31]_a[31]_MUX_1457_o11 (a[31]_a[31]_MUX_1457_o_bdd0)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_BUS_0026_INV_1191_o_lut<0> (Mcompar_BUS_0026_INV_1191_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0026_INV_1191_o_cy<0> (Mcompar_BUS_0026_INV_1191_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0026_INV_1191_o_cy<1> (Mcompar_BUS_0026_INV_1191_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0026_INV_1191_o_cy<2> (Mcompar_BUS_0026_INV_1191_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0026_INV_1191_o_cy<3> (Mcompar_BUS_0026_INV_1191_o_cy<3>)
+     MUXCY:CI->O          70   0.213   1.680  Mcompar_BUS_0026_INV_1191_o_cy<4> (Mcompar_BUS_0026_INV_1191_o_cy<4>)
+     LUT5:I4->O            6   0.205   1.089  a[31]_a[31]_MUX_1490_o11 (a[31]_a[31]_MUX_1490_o_bdd0)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_BUS_0027_INV_1190_o_lut<0> (Mcompar_BUS_0027_INV_1190_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0027_INV_1190_o_cy<0> (Mcompar_BUS_0027_INV_1190_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0027_INV_1190_o_cy<1> (Mcompar_BUS_0027_INV_1190_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0027_INV_1190_o_cy<2> (Mcompar_BUS_0027_INV_1190_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0027_INV_1190_o_cy<3> (Mcompar_BUS_0027_INV_1190_o_cy<3>)
+     MUXCY:CI->O          95   0.213   1.845  Mcompar_BUS_0027_INV_1190_o_cy<4> (Mcompar_BUS_0027_INV_1190_o_cy<4>)
+     LUT5:I4->O            6   0.205   1.089  a[31]_a[31]_MUX_1523_o11 (a[31]_a[31]_MUX_1523_o_bdd0)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_BUS_0028_INV_1189_o_lut<0> (Mcompar_BUS_0028_INV_1189_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0028_INV_1189_o_cy<0> (Mcompar_BUS_0028_INV_1189_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0028_INV_1189_o_cy<1> (Mcompar_BUS_0028_INV_1189_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0028_INV_1189_o_cy<2> (Mcompar_BUS_0028_INV_1189_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0028_INV_1189_o_cy<3> (Mcompar_BUS_0028_INV_1189_o_cy<3>)
+     MUXCY:CI->O          77   0.213   1.726  Mcompar_BUS_0028_INV_1189_o_cy<4> (Mcompar_BUS_0028_INV_1189_o_cy<4>)
+     LUT5:I4->O            6   0.205   1.089  a[31]_a[31]_MUX_1556_o11 (a[31]_a[31]_MUX_1556_o_bdd0)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_BUS_0029_INV_1188_o_lut<0> (Mcompar_BUS_0029_INV_1188_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0029_INV_1188_o_cy<0> (Mcompar_BUS_0029_INV_1188_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0029_INV_1188_o_cy<1> (Mcompar_BUS_0029_INV_1188_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0029_INV_1188_o_cy<2> (Mcompar_BUS_0029_INV_1188_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0029_INV_1188_o_cy<3> (Mcompar_BUS_0029_INV_1188_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0029_INV_1188_o_cy<4> (Mcompar_BUS_0029_INV_1188_o_cy<4>)
+     MUXCY:CI->O         100   0.213   1.878  Mcompar_BUS_0029_INV_1188_o_cy<5> (Mcompar_BUS_0029_INV_1188_o_cy<5>)
+     LUT5:I4->O            6   0.205   1.089  n2493<6>31 (n2493<6>_bdd4)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_BUS_0030_INV_1187_o_lut<0> (Mcompar_BUS_0030_INV_1187_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0030_INV_1187_o_cy<0> (Mcompar_BUS_0030_INV_1187_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0030_INV_1187_o_cy<1> (Mcompar_BUS_0030_INV_1187_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0030_INV_1187_o_cy<2> (Mcompar_BUS_0030_INV_1187_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0030_INV_1187_o_cy<3> (Mcompar_BUS_0030_INV_1187_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0030_INV_1187_o_cy<4> (Mcompar_BUS_0030_INV_1187_o_cy<4>)
+     MUXCY:CI->O         110   0.213   1.904  Mcompar_BUS_0030_INV_1187_o_cy<5> (Mcompar_BUS_0030_INV_1187_o_cy<5>)
+     LUT5:I4->O            3   0.205   0.995  n2619<5>1 (n2619<5>)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_BUS_0031_INV_1186_o_lut<0> (Mcompar_BUS_0031_INV_1186_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0031_INV_1186_o_cy<0> (Mcompar_BUS_0031_INV_1186_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0031_INV_1186_o_cy<1> (Mcompar_BUS_0031_INV_1186_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0031_INV_1186_o_cy<2> (Mcompar_BUS_0031_INV_1186_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0031_INV_1186_o_cy<3> (Mcompar_BUS_0031_INV_1186_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0031_INV_1186_o_cy<4> (Mcompar_BUS_0031_INV_1186_o_cy<4>)
+     MUXCY:CI->O          86   0.213   1.785  Mcompar_BUS_0031_INV_1186_o_cy<5> (Mcompar_BUS_0031_INV_1186_o_cy<5>)
+     LUT5:I4->O            2   0.205   0.961  n2623<4>1 (n2623<4>)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_BUS_0032_INV_1185_o_lut<0> (Mcompar_BUS_0032_INV_1185_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0032_INV_1185_o_cy<0> (Mcompar_BUS_0032_INV_1185_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0032_INV_1185_o_cy<1> (Mcompar_BUS_0032_INV_1185_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0032_INV_1185_o_cy<2> (Mcompar_BUS_0032_INV_1185_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0032_INV_1185_o_cy<3> (Mcompar_BUS_0032_INV_1185_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0032_INV_1185_o_cy<4> (Mcompar_BUS_0032_INV_1185_o_cy<4>)
+     MUXCY:CI->O          31   0.213   1.278  Mcompar_BUS_0032_INV_1185_o_cy<5> (Mcompar_BUS_0032_INV_1185_o_cy<5>)
+     LUT5:I4->O            2   0.205   0.961  n2493<3>1 (n2493<3>)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_BUS_0033_INV_1184_o_lut<0> (Mcompar_BUS_0033_INV_1184_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0033_INV_1184_o_cy<0> (Mcompar_BUS_0033_INV_1184_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0033_INV_1184_o_cy<1> (Mcompar_BUS_0033_INV_1184_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0033_INV_1184_o_cy<2> (Mcompar_BUS_0033_INV_1184_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0033_INV_1184_o_cy<3> (Mcompar_BUS_0033_INV_1184_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0033_INV_1184_o_cy<4> (Mcompar_BUS_0033_INV_1184_o_cy<4>)
+     MUXCY:CI->O           2   0.213   0.617  Mcompar_BUS_0033_INV_1184_o_cy<5> (Mcompar_BUS_0033_INV_1184_o_cy<5>)
+     LUT1:I0->O            1   0.205   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<0>_rt (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<0>_rt)
+     MUXCY:S->O            1   0.172   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<0> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<1> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<2> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<3> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<4> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<5> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<6> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<7> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<8> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<9> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<10> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<11> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<12> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<13> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<14> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<15> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<16> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<17> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<18> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<19> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<20> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<21> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<22> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<23> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<24> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<25> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<26> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<27> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<27>)
+     MUXCY:CI->O           0   0.019   0.000  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<28> (Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_cy<28>)
+     XORCY:CI->O           1   0.180   0.580  Madd_GND_12_o_BUS_0001_add_70_OUT[32:0]_xor<29> (GND_12_o_BUS_0001_add_70_OUT[32:0]<29>)
+     LUT2:I1->O            1   0.205   0.000  o<30>1 (o<29>)
+     end scope: 'ins3/mean_U22/SUM[31]_GND_11_o_div_70:o<31>'
+     FD:D                      0.102          AVERAGE_31
+    ----------------------------------------
+    Total                     75.468ns (17.397ns logic, 58.071ns route)
+                                       (23.1% logic, 76.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ins1/pll_base_inst/CLKOUT1'
+  Clock period: 6.285ns (frequency: 159.102MHz)
+  Total number of paths / destination ports: 5646 / 364
+-------------------------------------------------------------------------
+Delay:               6.285ns (Levels of Logic = 4)
+  Source:            ins2/i2/cnt_clk_7 (FF)
+  Destination:       ins2/i2/cnt_clk_0 (FF)
+  Source Clock:      ins1/pll_base_inst/CLKOUT1 rising
+  Destination Clock: ins1/pll_base_inst/CLKOUT1 rising
+
+  Data Path: ins2/i2/cnt_clk_7 to ins2/i2/cnt_clk_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.981  cnt_clk_7 (cnt_clk_7)
+     LUT6:I0->O            1   0.203   0.924  cnt_clk[31]_GND_7_o_equal_20_o<31>11 (cnt_clk[31]_GND_7_o_equal_20_o<31>11)
+     LUT5:I0->O            3   0.203   0.651  cnt_clk[31]_GND_7_o_equal_20_o<31>16 (cnt_clk[31]_GND_7_o_equal_20_o<31>1)
+     LUT6:I5->O            6   0.205   0.745  end_cnt_clk<31>1 (end_cnt_clk)
+     LUT2:I1->O           32   0.205   1.291  end_cnt_clk_01 (end_cnt_clk_0)
+     FDR:R                     0.430          cnt_clk_0
+    ----------------------------------------
+    Total                      6.285ns (1.693ns logic, 4.592ns route)
+                                       (26.9% logic, 73.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLKOUT_U24_n'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              1.903ns (Levels of Logic = 2)
+  Source:            DATA_IN_U24<0> (PAD)
+  Destination:       ins3/DATA_IN_U24_reg_0 (FF)
+  Destination Clock: CLKOUT_U24_n rising
+
+  Data Path: DATA_IN_U24<0> to ins3/DATA_IN_U24_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  DATA_IN_U24_0_IBUF (DATA_IN_U24_0_IBUF)
+     begin scope: 'ins3:DATA_IN_U24<0>'
+     FD:D                      0.102          DATA_IN_U24_reg_0
+    ----------------------------------------
+    Total                      1.903ns (1.324ns logic, 0.579ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLKOUT_U22_n'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              1.903ns (Levels of Logic = 2)
+  Source:            DATA_IN_U22<0> (PAD)
+  Destination:       ins3/DATA_IN_U22_reg_0 (FF)
+  Destination Clock: CLKOUT_U22_n rising
+
+  Data Path: DATA_IN_U22<0> to ins3/DATA_IN_U22_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  DATA_IN_U22_0_IBUF (DATA_IN_U22_0_IBUF)
+     begin scope: 'ins3:DATA_IN_U22<0>'
+     FD:D                      0.102          DATA_IN_U22_reg_0
+    ----------------------------------------
+    Total                      1.903ns (1.324ns logic, 0.579ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLKOUT_U23_n'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              1.903ns (Levels of Logic = 2)
+  Source:            DATA_IN_U23<0> (PAD)
+  Destination:       ins3/DATA_IN_U23_reg_0 (FF)
+  Destination Clock: CLKOUT_U23_n rising
+
+  Data Path: DATA_IN_U23<0> to ins3/DATA_IN_U23_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  DATA_IN_U23_0_IBUF (DATA_IN_U23_0_IBUF)
+     begin scope: 'ins3:DATA_IN_U23<0>'
+     FD:D                      0.102          DATA_IN_U23_reg_0
+    ----------------------------------------
+    Total                      1.903ns (1.324ns logic, 0.579ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLKOUT_U25_n'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              1.903ns (Levels of Logic = 2)
+  Source:            DATA_IN_U25<0> (PAD)
+  Destination:       ins3/DATA_IN_U25_reg_0 (FF)
+  Destination Clock: CLKOUT_U25_n rising
+
+  Data Path: DATA_IN_U25<0> to ins3/DATA_IN_U25_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  DATA_IN_U25_0_IBUF (DATA_IN_U25_0_IBUF)
+     begin scope: 'ins3:DATA_IN_U25<0>'
+     FD:D                      0.102          DATA_IN_U25_reg_0
+    ----------------------------------------
+    Total                      1.903ns (1.324ns logic, 0.579ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ins1/pll_base_inst/CLKOUT1'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              3.521ns (Levels of Logic = 3)
+  Source:            RX1 (PAD)
+  Destination:       ins2/i2/BUSY (FF)
+  Destination Clock: ins1/pll_base_inst/CLKOUT1 rising
+
+  Data Path: RX1 to ins2/i2/BUSY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   1.222   1.085  RX1_IBUF (RX1_IBUF)
+     begin scope: 'ins2:RX'
+     begin scope: 'ins2/i2:RX'
+     LUT6:I3->O            1   0.205   0.579  _n01091 (_n0109)
+     FDR:R                     0.430          BUSY
+    ----------------------------------------
+    Total                      3.521ns (1.857ns logic, 1.664ns route)
+                                       (52.7% logic, 47.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ins1/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            LED_3 (FF)
+  Destination:       LED<3> (PAD)
+  Source Clock:      ins1/pll_base_inst/CLKOUT0 rising
+
+  Data Path: LED_3 to LED<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.579  LED_3 (LED_3)
+     OBUF:I->O                 2.571          LED_3_OBUF (LED<3>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ins1/pll_base_inst/CLKOUT1'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 2)
+  Source:            ins2/i1/TX (FF)
+  Destination:       TX1 (PAD)
+  Source Clock:      ins1/pll_base_inst/CLKOUT1 rising
+
+  Data Path: ins2/i1/TX to TX1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.616  TX (TX)
+     end scope: 'ins2/i1:TX'
+     end scope: 'ins2:TX'
+     OBUF:I->O                 2.571          TX1_OBUF (TX1)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock ins1/pll_base_inst/CLKOUT0
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+CLKOUT_U22_n              |    1.947|         |         |         |
+ins1/pll_base_inst/CLKOUT0|   75.468|         |         |         |
+--------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ins1/pll_base_inst/CLKOUT1
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+CLKOUT_U23_n              |    1.128|         |         |         |
+CLKOUT_U24_n              |    1.128|         |         |         |
+CLKOUT_U25_n              |    1.128|         |         |         |
+ins1/pll_base_inst/CLKOUT0|    1.128|         |         |         |
+ins1/pll_base_inst/CLKOUT1|    6.285|         |         |         |
+--------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 28.00 secs
+Total CPU time to Xst completion: 27.80 secs
+ 
+--> 
+
+Total memory usage is 285596 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  506 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

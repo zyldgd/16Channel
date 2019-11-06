@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Aug 22 20:40:58 2018
+# Process ID: 11092
+# Log file: C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from E:/ISE/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [E:/ISE/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [E:/ISE/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/pa.fromHdl.tcl
+# create_project -name clkTest -dir "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/planAhead_run_3" -part xc6slx100fgg676-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "test.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {test.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top test $srcset
+# add_files [list {test.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx100fgg676-3
+Using Verific elaboration
+Parsing VHDL file "E:/ISE/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.v" into library work
+Loading clock regions from E:/ISE/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx100/ClockRegion.xml
+Loading clock buffers from E:/ISE/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx100/ClockBuffers.xml
+Loading package pin functions from E:/ISE/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from E:/ISE/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx100/fgg676/Package.xml
+Loading io standards from E:/ISE/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from E:/ISE/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : E:/ISE/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.ucf]
+Finished Parsing UCF File [C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: ce7a78a3
+open_rtl_design: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 642.172 ; gain = 181.973
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS25 [get_ports [list {DATA[0]}]]
+set_property iostandard LVTTL [get_ports [list {DATA[15]} {DATA[14]} {DATA[13]} {DATA[12]} {DATA[11]} {DATA[10]} {DATA[9]} {DATA[8]} {DATA[7]} {DATA[6]} {DATA[5]} {DATA[4]} {DATA[3]} {DATA[2]} {DATA[1]} {DATA[0]}]]
+set_property iostandard LVTTL [get_ports [list CLKOUT_n]]
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest\planAhead_pid11092.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Wed Aug 22 20:42:22 2018...
+INFO: [Common 17-83] Releasing license: PlanAhead

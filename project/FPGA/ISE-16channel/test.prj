@@ -1,0 +1,4 @@
+verilog work "ipcore_dir/pll.v"
+verilog work "uart_tx.v"
+verilog work "ipcore_dir/FIR.v"
+verilog work "test.v"

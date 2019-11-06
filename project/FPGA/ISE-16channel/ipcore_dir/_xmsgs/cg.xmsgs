@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="sim" num="172" delta="new" >Generating IP...
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" >Unable to clean the temporary directory &apos;C:\Users\Administrator\Desktop\task\ISE\clkTest\clkTest\ipcore_dir\tmp\_cg\&apos; because it is being used by another person, process, or program.  Close any processes or programs that might be using this directory and try again.
+</msg>
+
+<msg type="error" file="sim" num="0" delta<msg type="warning" file="coreutil" num="0" delta="new" >WARNING: Default charset GBK not supported, using ISO-8859-1 instead
+</msg>
+
+<msg type="warning" file="coreutil" num="264" delta="new" >Could not remove infile.
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" >Error found during generation.
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" >Failed to generate &apos;FIR&apos;.  null
+</msg>
+
+</messages>
+

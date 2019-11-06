@@ -1,0 +1,542 @@
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol high -mt off test_map.ncd test.ncd test.pcf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol high -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol high -mt off test_map.ncd test.ncd test.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol high -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+bitgen -intstyle ise -f test.ut test.ncd 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol high -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol high -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol high -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol high -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol high -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol high -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol high -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol high -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol high -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol high -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol high -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol high -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test_cs.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.xst" -ofn "C:/Users/Administrator/Desktop/task/ISE/clkTest/clkTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx100-fgg676-3 test.ngc test.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol std -mt off test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf 

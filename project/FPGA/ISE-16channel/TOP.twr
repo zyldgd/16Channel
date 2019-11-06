@@ -1,0 +1,169 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+E:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n 3
+-fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf test.ucf
+
+Design file:              TOP.ncd
+Physical constraint file: TOP.pcf
+Device,package,speed:     xc6slx100,fgg676,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+RX1         |    4.481(R)|      SLOW  |   -1.813(R)|      FAST  |CLK_50M           |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock CLKOUT_U22_n
+---------------+------------+------------+------------+------------+------------------+--------+
+               |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source         | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------+------------+------------------+--------+
+DATA_IN_U22<0> |   -4.721(R)|      FAST  |    8.682(R)|      SLOW  |CLKOUT_U22_n_BUFGP|   0.000|
+DATA_IN_U22<1> |   -4.677(R)|      FAST  |    8.598(R)|      SLOW  |CLKOUT_U22_n_BUFGP|   0.000|
+DATA_IN_U22<2> |   -4.267(R)|      FAST  |    8.067(R)|      SLOW  |CLKOUT_U22_n_BUFGP|   0.000|
+DATA_IN_U22<3> |   -4.835(R)|      FAST  |    8.800(R)|      SLOW  |CLKOUT_U22_n_BUFGP|   0.000|
+DATA_IN_U22<4> |   -4.545(R)|      FAST  |    8.374(R)|      SLOW  |CLKOUT_U22_n_BUFGP|   0.000|
+DATA_IN_U22<5> |   -4.338(R)|      FAST  |    8.151(R)|      SLOW  |CLKOUT_U22_n_BUFGP|   0.000|
+DATA_IN_U22<6> |   -4.560(R)|      FAST  |    8.380(R)|      SLOW  |CLKOUT_U22_n_BUFGP|   0.000|
+DATA_IN_U22<7> |   -4.252(R)|      FAST  |    7.988(R)|      SLOW  |CLKOUT_U22_n_BUFGP|   0.000|
+DATA_IN_U22<8> |   -4.354(R)|      FAST  |    8.137(R)|      SLOW  |CLKOUT_U22_n_BUFGP|   0.000|
+DATA_IN_U22<9> |   -4.633(R)|      FAST  |    8.480(R)|      SLOW  |CLKOUT_U22_n_BUFGP|   0.000|
+DATA_IN_U22<10>|   -4.529(R)|      FAST  |    8.339(R)|      SLOW  |CLKOUT_U22_n_BUFGP|   0.000|
+DATA_IN_U22<11>|   -4.467(R)|      FAST  |    8.283(R)|      SLOW  |CLKOUT_U22_n_BUFGP|   0.000|
+DATA_IN_U22<12>|   -4.809(R)|      FAST  |    8.776(R)|      SLOW  |CLKOUT_U22_n_BUFGP|   0.000|
+DATA_IN_U22<13>|   -4.696(R)|      FAST  |    8.646(R)|      SLOW  |CLKOUT_U22_n_BUFGP|   0.000|
+DATA_IN_U22<14>|   -4.644(R)|      FAST  |    8.557(R)|      SLOW  |CLKOUT_U22_n_BUFGP|   0.000|
+DATA_IN_U22<15>|   -3.283(R)|      FAST  |    6.580(R)|      SLOW  |CLKOUT_U22_n_BUFGP|   0.000|
+---------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock CLKOUT_U23_n
+---------------+------------+------------+------------+------------+------------------+--------+
+               |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source         | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------+------------+------------------+--------+
+DATA_IN_U23<0> |    2.388(R)|      SLOW  |   -1.311(R)|      FAST  |CLKOUT_U23_n_BUFGP|   0.000|
+DATA_IN_U23<1> |    2.078(R)|      SLOW  |   -1.121(R)|      FAST  |CLKOUT_U23_n_BUFGP|   0.000|
+DATA_IN_U23<2> |    2.283(R)|      SLOW  |   -1.234(R)|      FAST  |CLKOUT_U23_n_BUFGP|   0.000|
+DATA_IN_U23<3> |    1.143(R)|      SLOW  |   -0.316(R)|      SLOW  |CLKOUT_U23_n_BUFGP|   0.000|
+DATA_IN_U23<4> |    1.234(R)|      SLOW  |   -0.402(R)|      SLOW  |CLKOUT_U23_n_BUFGP|   0.000|
+DATA_IN_U23<5> |    1.856(R)|      SLOW  |   -0.975(R)|      FAST  |CLKOUT_U23_n_BUFGP|   0.000|
+DATA_IN_U23<6> |    1.958(R)|      SLOW  |   -1.030(R)|      FAST  |CLKOUT_U23_n_BUFGP|   0.000|
+DATA_IN_U23<7> |    1.819(R)|      SLOW  |   -0.932(R)|      FAST  |CLKOUT_U23_n_BUFGP|   0.000|
+DATA_IN_U23<8> |    1.766(R)|      SLOW  |   -0.880(R)|      FAST  |CLKOUT_U23_n_BUFGP|   0.000|
+DATA_IN_U23<9> |    0.906(R)|      SLOW  |   -0.093(R)|      SLOW  |CLKOUT_U23_n_BUFGP|   0.000|
+DATA_IN_U23<10>|    2.037(R)|      SLOW  |   -1.056(R)|      FAST  |CLKOUT_U23_n_BUFGP|   0.000|
+DATA_IN_U23<11>|    2.571(R)|      SLOW  |   -1.372(R)|      FAST  |CLKOUT_U23_n_BUFGP|   0.000|
+DATA_IN_U23<12>|    2.121(R)|      SLOW  |   -1.093(R)|      FAST  |CLKOUT_U23_n_BUFGP|   0.000|
+DATA_IN_U23<13>|    1.071(R)|      SLOW  |   -0.247(R)|      SLOW  |CLKOUT_U23_n_BUFGP|   0.000|
+DATA_IN_U23<14>|    0.968(R)|      SLOW  |   -0.150(R)|      SLOW  |CLKOUT_U23_n_BUFGP|   0.000|
+DATA_IN_U23<15>|    1.104(R)|      SLOW  |   -0.281(R)|      SLOW  |CLKOUT_U23_n_BUFGP|   0.000|
+---------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock CLKOUT_U24_n
+---------------+------------+------------+------------+------------+------------------+--------+
+               |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source         | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------+------------+------------------+--------+
+DATA_IN_U24<0> |   -4.750(R)|      FAST  |    8.718(R)|      SLOW  |CLKOUT_U24_n_BUFGP|   0.000|
+DATA_IN_U24<1> |   -4.614(R)|      FAST  |    8.507(R)|      SLOW  |CLKOUT_U24_n_BUFGP|   0.000|
+DATA_IN_U24<2> |   -4.568(R)|      FAST  |    8.453(R)|      SLOW  |CLKOUT_U24_n_BUFGP|   0.000|
+DATA_IN_U24<3> |   -4.571(R)|      FAST  |    8.455(R)|      SLOW  |CLKOUT_U24_n_BUFGP|   0.000|
+DATA_IN_U24<4> |   -4.349(R)|      FAST  |    8.146(R)|      SLOW  |CLKOUT_U24_n_BUFGP|   0.000|
+DATA_IN_U24<5> |   -4.596(R)|      FAST  |    8.513(R)|      SLOW  |CLKOUT_U24_n_BUFGP|   0.000|
+DATA_IN_U24<6> |   -4.394(R)|      FAST  |    8.235(R)|      SLOW  |CLKOUT_U24_n_BUFGP|   0.000|
+DATA_IN_U24<7> |   -4.398(R)|      FAST  |    8.226(R)|      SLOW  |CLKOUT_U24_n_BUFGP|   0.000|
+DATA_IN_U24<8> |   -4.710(R)|      FAST  |    8.582(R)|      SLOW  |CLKOUT_U24_n_BUFGP|   0.000|
+DATA_IN_U24<9> |   -4.422(R)|      FAST  |    8.225(R)|      SLOW  |CLKOUT_U24_n_BUFGP|   0.000|
+DATA_IN_U24<10>|   -4.498(R)|      FAST  |    8.306(R)|      SLOW  |CLKOUT_U24_n_BUFGP|   0.000|
+DATA_IN_U24<11>|   -4.599(R)|      FAST  |    8.452(R)|      SLOW  |CLKOUT_U24_n_BUFGP|   0.000|
+DATA_IN_U24<12>|   -4.510(R)|      FAST  |    8.367(R)|      SLOW  |CLKOUT_U24_n_BUFGP|   0.000|
+DATA_IN_U24<13>|   -4.308(R)|      FAST  |    8.080(R)|      SLOW  |CLKOUT_U24_n_BUFGP|   0.000|
+DATA_IN_U24<14>|   -4.531(R)|      FAST  |    8.358(R)|      SLOW  |CLKOUT_U24_n_BUFGP|   0.000|
+DATA_IN_U24<15>|   -4.486(R)|      FAST  |    8.318(R)|      SLOW  |CLKOUT_U24_n_BUFGP|   0.000|
+---------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock CLKOUT_U25_n
+---------------+------------+------------+------------+------------+------------------+--------+
+               |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source         | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------+------------+------------------+--------+
+DATA_IN_U25<0> |   -0.978(R)|      FAST  |    2.717(R)|      SLOW  |CLKOUT_U25_n_BUFGP|   0.000|
+DATA_IN_U25<1> |   -1.053(R)|      FAST  |    2.800(R)|      SLOW  |CLKOUT_U25_n_BUFGP|   0.000|
+DATA_IN_U25<2> |   -1.234(R)|      FAST  |    3.049(R)|      SLOW  |CLKOUT_U25_n_BUFGP|   0.000|
+DATA_IN_U25<3> |   -2.157(R)|      FAST  |    4.442(R)|      SLOW  |CLKOUT_U25_n_BUFGP|   0.000|
+DATA_IN_U25<4> |   -2.088(R)|      FAST  |    4.309(R)|      SLOW  |CLKOUT_U25_n_BUFGP|   0.000|
+DATA_IN_U25<5> |   -1.007(R)|      FAST  |    2.791(R)|      SLOW  |CLKOUT_U25_n_BUFGP|   0.000|
+DATA_IN_U25<6> |   -0.857(R)|      FAST  |    2.511(R)|      SLOW  |CLKOUT_U25_n_BUFGP|   0.000|
+DATA_IN_U25<7> |   -0.867(R)|      FAST  |    2.533(R)|      SLOW  |CLKOUT_U25_n_BUFGP|   0.000|
+DATA_IN_U25<8> |   -1.266(R)|      FAST  |    3.098(R)|      SLOW  |CLKOUT_U25_n_BUFGP|   0.000|
+DATA_IN_U25<9> |   -1.439(R)|      FAST  |    3.356(R)|      SLOW  |CLKOUT_U25_n_BUFGP|   0.000|
+DATA_IN_U25<10>|   -1.086(R)|      FAST  |    2.872(R)|      SLOW  |CLKOUT_U25_n_BUFGP|   0.000|
+DATA_IN_U25<11>|   -2.163(R)|      FAST  |    4.435(R)|      SLOW  |CLKOUT_U25_n_BUFGP|   0.000|
+DATA_IN_U25<12>|   -1.587(R)|      FAST  |    3.574(R)|      SLOW  |CLKOUT_U25_n_BUFGP|   0.000|
+DATA_IN_U25<13>|   -2.228(R)|      FAST  |    4.514(R)|      SLOW  |CLKOUT_U25_n_BUFGP|   0.000|
+DATA_IN_U25<14>|   -1.034(R)|      FAST  |    2.750(R)|      SLOW  |CLKOUT_U25_n_BUFGP|   0.000|
+DATA_IN_U25<15>|   -0.924(R)|      FAST  |    2.601(R)|      SLOW  |CLKOUT_U25_n_BUFGP|   0.000|
+---------------+------------+------------+------------+------------+------------------+--------+
+
+Clock CLK to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+LED<0>      |        10.394(R)|      SLOW  |         5.717(R)|      FAST  |CLK_20M           |   0.000|
+LED<1>      |        10.249(R)|      SLOW  |         5.664(R)|      FAST  |CLK_20M           |   0.000|
+LED<2>      |        10.134(R)|      SLOW  |         5.587(R)|      FAST  |CLK_20M           |   0.000|
+LED<3>      |        10.751(R)|      SLOW  |         5.954(R)|      FAST  |CLK_20M           |   0.000|
+TX1         |        16.570(R)|      SLOW  |         9.505(R)|      FAST  |CLK_50M           |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |  245.159|         |         |         |
+CLKOUT_U22_n   |   14.628|         |         |         |
+CLKOUT_U23_n   |    2.030|         |         |         |
+CLKOUT_U24_n   |   10.724|         |         |         |
+CLKOUT_U25_n   |    5.842|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sat Sep 29 09:45:28 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 410 MB
+
+
+

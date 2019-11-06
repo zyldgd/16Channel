@@ -1,0 +1,8 @@
+verilog work "ipcore_dir/pll.v"
+verilog work "MIDLE_5.v"
+verilog work "uart_tx.v"
+verilog work "UART_RX.v"
+verilog work "MEAN.v"
+verilog work "LTC2203.v"
+verilog work "DATA_TRANS.v"
+verilog work "TOP.v"
